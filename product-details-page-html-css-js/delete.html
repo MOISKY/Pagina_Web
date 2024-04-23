@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Product</title>
+    <!-- CSS -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-container {
+            width: 60%;
+            max-width: 800px;
+        }
+
+        .product-info {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ff4732;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagination">
+        <p>Home > Admin > Delete Product</p>
+    </div>
+    <!-- Product Section -->
+    <section class="product-container">
+        <!-- Left side (form to delete product) -->
+        <div class="product-info">
+            <h3>Delete Product</h3>
+            <form id="delete-product-form">
+                <div class="input-field">
+                    <label for="product-id">Product ID:</label>
+                    <input type="text" id="product-id" name="product-id" required>
+                </div>
+
+                <div class="input-field">
+                    <button type="submit">Delete Product</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
